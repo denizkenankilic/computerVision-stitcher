@@ -1,6 +1,3 @@
-
-
-
 #include "Calibration.h"
 using namespace cv;
 
@@ -133,6 +130,3 @@ void CameraCalibrator::setCalibrationFlag(bool radial8CoeffEnabled, bool tangent
     if (!tangentialParamEnabled) flag += CV_CALIB_ZERO_TANGENT_DIST;
     if (radial8CoeffEnabled) flag += CV_CALIB_RATIONAL_MODEL;
 }
-
-
-
