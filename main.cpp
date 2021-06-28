@@ -18,22 +18,18 @@
 using namespace cv;
 using namespace std;
 
-
 int main()
 {
  vector< Mat > vImg;
  Mat rImg;
 
- //vImg.push_back( imread("/home/cabioglu/Documents/QtC++/perspective/pers/perspective/S1.jpg") );
- vImg.push_back( imread("/home/cabioglu/Documents/QtC++/perspective/pers/perspective/S2.jpg") );
- vImg.push_back( imread("/home/cabioglu/Documents/QtC++/perspective/pers/perspective/S3.jpg") );
- vImg.push_back( imread("/home/cabioglu/Documents/QtC++/perspective/pers/perspective/S4.jpg") );
- //vImg.push_back( imread("/home/cabioglu/Documents/QtC++/perspective/pers/perspective/S5.jpg") );
- //vImg.push_back( imread("./stitching_img/S6.jpg") );
-
+ //vImg.push_back( imread("data/S1.jpg") );
+ vImg.push_back( imread("data/S2.jpg") );
+ vImg.push_back( imread("data/S3.jpg") );
+ vImg.push_back( imread("data/S4.jpg") );
+ //vImg.push_back( imread("data/S5.jpg") );
 
  Stitcher stitcher = Stitcher::createDefault();
-
 
  unsigned long AAtime=0, BBtime=0; //check processing time
  AAtime = getTickCount(); //check processing time
